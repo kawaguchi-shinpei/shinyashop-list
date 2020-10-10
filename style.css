@@ -157,7 +157,7 @@ main{
   justify-content: space-between;
 }
 
-.content-list_img{
+.content-list_img img{
   border: 1px solid #aaaaaa;
       box-shadow: 1px 1px 3px #aaaaaa;
       border-radius: 5px;
@@ -247,8 +247,11 @@ footer{
     width: 100%;
     box-sizing: border-box;
   }
-  .header-right{
-
+  .header-right li{
+    padding-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 0;
+      border-bottom: 1px solid #555;
   }
   .header-left h1{
     font-size: 25px;
@@ -395,13 +398,6 @@ padding-top: 10px;
     width: 100%;
     display: block!important;
     padding-top: 50px!important;
-  }
-
-  .header-right li{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 0;
-    border-bottom: 1px solid #555;
   }
 
 }
