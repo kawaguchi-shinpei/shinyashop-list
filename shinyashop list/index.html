@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="./script/jquery-3.5.1.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+      <a href="#">
+    <h1 class="header-let_text">shinya shop</h1>
+      </a>
+    </div>
+    <div class="header-right">
+    <ul>
+      <li>
+    <a href="#home">HOME</a>
+      </li>
+      <li>
+    <a href="#worker">WORK</a>
+      </li>
+      <li>
+    <a href="#abouter">ABOUT</a>
+      </li>
+      <li>
+    <a href="#skiller">SKILL</a>
+      </li>
+      <li>
+    <a href="#contacter">CONTACT</a>
+      </li>
+
+    </ul>
+    </div>
+    </header>
+    <main>
+      <div class="content">
+<div class="content-title">
+<h2>portforio</h2>
+</div>
+<div class="content-list">
+<div class="content-list_img">
+  <img src="img/shop.png"width="900"height="500" alt="">
+</div>
+<!-- responce -->
+<div class="sidber-responce">
+  <div class="sidber-text_responce">
+<p>製作期間</p>
+<p>二日間</p>
+  </div>
+  <div class="sidber-text_responce">
+<p>業務内容</p>
+<p>Webデザイン・コーディング・レスポンシブ対応</p>
+  </div>
+  <div class="sidber-text_responce">
+<p>URL</p>
+<p></p>
+  </div>
+</div>
+<!-- end -->
+<div class="content-sidber">
+<div class="content-sidber_title">
+<h1 class="sidber-title">portforio list</h1>
+</div>
+<div class="content-list_portforio">
+  <ul class="sidber-ul">
+    <li class="sidber-list">
+<a href="#">portforio</a>
+    </li>
+    <li class="sidber-list">
+<a href="#">shinya shop</a>
+    </li>
+    <li class="sidber-list">
+<a href="">株式会社ZAZA</a>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="sidber-text">
+  <div class="sidber-text">
+<p>製作期間　：　二日間</p>
+  </div>
+  <div class="sidber-text">
+<p>業務内容　：　Webデザイン・コーディング・レスポンシブ対応</p>
+  </div>
+  <div class="sidber-text">
+<p>URL :　
+</p>
+  </div>
+</div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-with">
+        <div class="footer-menu">
+        <ul>
+          <li>
+        <a href="#home">HOME</a>
+          </li>
+          <li>
+        <a href="#worker">WORK</a>
+          </li>
+          <li>
+        <a href="#abouter">ABOUT</a>
+          </li>
+          <li>
+        <a href="#skiller">SKILL</a>
+          </li>
+          <li>
+        <a href="#contact">CONTACT</a>
+          </li>
+
+        </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+
+
+
+    </script>
+  </body>
+</html>
